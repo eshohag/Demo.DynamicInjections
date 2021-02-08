@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Demo.Entities\Demo.Entities.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.DynamicInjection">
+      <HintPath>..\..\Microsoft.Extensions.DependencyInjection.DynamicInjection\Microsoft.Extensions.DependencyInjection.DynamicInjection\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.DynamicInjection.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
