@@ -1,6 +1,7 @@
 ﻿using Demo.Entities;
 using Demo.Repository;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Demo.Manager
 {
@@ -12,9 +13,13 @@ namespace Demo.Manager
         {
             _studentRepository = studentRepository;
         }
-        public List<Student> GetAllStudents()
+        public List<Student> GetStudents()
         {
             return _studentRepository.GetStudents();
+        }
+        public List<Student> GetSQLStudents()
+        {
+            return _studentRepository.All().ToList();
         }
     }
 }

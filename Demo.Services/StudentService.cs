@@ -1,6 +1,6 @@
 ﻿using Demo.Entities;
 
-namespace Demo.DynamicInjections.Services
+namespace Demo.Services
 {
     public class StudentService : IStudentService, IDepartmentService
     {

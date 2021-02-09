@@ -1,5 +1,5 @@
-﻿using Demo.DynamicInjections.Services;
-using Demo.Manager;
+﻿using Demo.Manager;
+using Demo.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Demo.DynamicInjections.Controllers
@@ -19,9 +19,11 @@ namespace Demo.DynamicInjections.Controllers
 
         public IActionResult Index()
         {
-            var student = _studentService.GetStudent();
-            var department = _departmentService.DeptName();
-            var allStudents = _studentManager.GetAllStudents();
+            var studentService = _studentService.GetStudent();
+            var deptNameDepartmentService = _departmentService.DeptName();
+            var studentsRaw = _studentManager.GetStudents();
+            var studentsSQLDatabase = _studentManager.GetSQLStudents();
+
             return View();
         }
     }

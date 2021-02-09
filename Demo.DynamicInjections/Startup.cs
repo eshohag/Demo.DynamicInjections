@@ -1,9 +1,12 @@
+using Demo.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.DynamicInjection;
 using Microsoft.Extensions.Hosting;
+using System.Configuration;
 
 namespace Demo.DynamicInjections
 {
@@ -20,7 +23,12 @@ namespace Demo.DynamicInjections
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            #region DbContext Alias
+            services.AddDbContext<AppDbContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddScoped<DbContext, AppDbContext>();
 
+            #endregion
             //services.AddServicesOfType<IScopedService>();
             //services.AddServicesAttributeOfType<ScopedServiceAttribute>();
 

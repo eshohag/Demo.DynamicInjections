@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection.DynamicInjection;
 
-namespace Demo.DynamicInjections.Services
+namespace Demo.Services
 {
     [ScopedService]
     public interface IDepartmentService
