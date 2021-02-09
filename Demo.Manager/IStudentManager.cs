@@ -7,6 +7,7 @@ namespace Demo.Manager
     [ScopedService]
     public interface IStudentManager
     {
-        List<Student> GetAllStudents();
+        List<Student> GetStudents();
+        List<Student> GetSQLStudents();
     }
 }

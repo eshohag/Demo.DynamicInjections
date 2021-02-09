@@ -1,8 +1,7 @@
-﻿using Demo.DynamicInjections.Models;
-using Demo.Entities;
+﻿using Demo.Entities;
 using Microsoft.Extensions.DependencyInjection.DynamicInjection;
 
-namespace Demo.DynamicInjections.Services
+namespace Demo.Services
 {
     [ScopedService]
     public interface IStudentService

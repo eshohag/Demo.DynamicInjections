@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.DynamicInjections", "Demo.DynamicInjections\Demo.DynamicInjections.csproj", "{34C73DED-052A-43FF-8308-BBC8D06A3D4C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo.DynamicInjections", "Demo.DynamicInjections\Demo.DynamicInjections.csproj", "{34C73DED-052A-43FF-8308-BBC8D06A3D4C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.Manager", "Demo.Manager\Demo.Manager.csproj", "{76BED12E-A6AE-48F0-9E4A-0B56ADAE5E36}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo.Manager", "Demo.Manager\Demo.Manager.csproj", "{76BED12E-A6AE-48F0-9E4A-0B56ADAE5E36}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.Entities", "Demo.Entities\Demo.Entities.csproj", "{CCF56708-579E-449B-AFD7-B76831DFB668}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo.Entities", "Demo.Entities\Demo.Entities.csproj", "{CCF56708-579E-449B-AFD7-B76831DFB668}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.Repository", "Demo.Repository\Demo.Repository.csproj", "{9F57D9F6-9EC6-46D8-B859-DEEC16D743E5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo.Repository", "Demo.Repository\Demo.Repository.csproj", "{9F57D9F6-9EC6-46D8-B859-DEEC16D743E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.Services", "Demo.Services\Demo.Services.csproj", "{689E8403-B668-48DC-97D7-E3DDA1A31425}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{9F57D9F6-9EC6-46D8-B859-DEEC16D743E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F57D9F6-9EC6-46D8-B859-DEEC16D743E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9F57D9F6-9EC6-46D8-B859-DEEC16D743E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{689E8403-B668-48DC-97D7-E3DDA1A31425}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{689E8403-B668-48DC-97D7-E3DDA1A31425}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{689E8403-B668-48DC-97D7-E3DDA1A31425}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{689E8403-B668-48DC-97D7-E3DDA1A31425}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
